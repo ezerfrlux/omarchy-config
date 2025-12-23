@@ -1,0 +1,51 @@
+# Application bindings
+$terminal = uwsm app -- bash -c "mpv --no-video --volume=130 ~/Downloads/terminal.mp3 & $TERMINAL"
+$browser = bash -c "mpv --no-video --volume=300 ~/Downloads/click-sao.mp3 & omarchy-launch-browser"
+$code = uwsm app -- code
+
+bindd = SUPER, RETURN, Terminal, exec, $terminal --dir="$(omarchy-cmd-terminal-cwd)"
+bindd = SUPER SHIFT, F, File manager, exec, bash -c "uwsm app -- nautilus --new-window & mpv --no-video --volume=300 ~/Downloads/click-sao.mp3"
+bindd = SUPER SHIFT, B, Browser, exec, $browser
+bindd = SUPER SHIFT, V, Vscode, exec, bash -c "uwsm app -- code & sleep 0.79; paplay ~/Downloads/menu.wav"
+bindd = SUPER SHIFT ALT, B, Browser (private), exec, $browser --private
+bindd = SUPER SHIFT, M, Music, exec, omarchy-launch-or-focus spotify
+bindd = SUPER SHIFT, N, Editor, exec, omarchy-launch-editor
+bindd = SUPER SHIFT, T, Activity, exec, $terminal -e btop
+bindd = SUPER SHIFT, D, Docker, exec, $terminal -e lazydocker
+bindd = SUPER SHIFT, G, Signal, exec, omarchy-launch-or-focus signal "uwsm app -- signal-desktop"
+bindd = SUPER SHIFT, O, Obsidian, exec, omarchy-launch-or-focus obsidian "uwsm app -- obsidian -disable-gpu --enable-wayland-ime"
+bindd = SUPER SHIFT, slash, Passwords, exec, uwsm app -- 1password
+
+# If your web app url contains #, type it as ## to prevent hyperland treat it as comments
+bindd = SUPER SHIFT, A, ChatGPT, exec, omarchy-launch-webapp "https://chatgpt.com"
+bindd = SUPER SHIFT ALT, A, Grok, exec, omarchy-launch-webapp "https://grok.com"
+bindd = SUPER SHIFT, C, Calendar, exec, omarchy-launch-webapp "https://app.hey.com/calendar/weeks/"
+bindd = SUPER SHIFT, E, Email, exec, omarchy-launch-webapp "https://app.hey.com"
+bindd = SUPER SHIFT, Y, YouTube, exec, omarchy-launch-or-focus-webapp YouTube "https://youtube.com/"
+bindd = SUPER SHIFT ALT, G, WhatsApp, exec, omarchy-launch-or-focus-webapp WhatsApp "https://web.whatsapp.com/"
+bindd = SUPER SHIFT CTRL, G, Google Messages, exec, omarchy-launch-or-focus-webapp "Google Messages" "https://messages.google.com/web/conversations"
+bindd = SUPER SHIFT, X, X, exec, omarchy-launch-webapp "https://x.com/"
+bindd = SUPER SHIFT ALT, X, X Post, exec, omarchy-launch-webapp "https://x.com/compose/post"
+
+# Overwrite existing bindings, like putting Omarchy Menu on Super + Space
+# unbind = SUPER SHIFT, SPACE
+bindd = SUPER, W, Close window, exec, bash -c "mpv --no-video --volume=80 ~/Downloads/terminal2.mp3"
+bindd = SUPER, SPACE, Menu, exec, bash -c "paplay ~/Downloads/menu.wav"
+bindd = SUPER ALT, SPACE, Menu, exec, bash -c "paplay ~/Downloads/menu.wav"
+bindd = SUPER, BACKSPACE, Quit Transparent, exec, bash -c "mpv --no-video --volume=200 ~/Downloads/click-sao.mp3"
+
+bindd = SUPER CTRL, SPACE, Change Bg, exec, bash -c "mpv --no-video --volume=200 ~/Downloads/click-sao.mp3 & sleep 4; xdotool key --clearmodifiers ctrl+b"
+
+# Move to other windows and execute a sound
+bindd = SUPER, RIGHT, Move to right window , exec, bash -c "mpv --no-video --volume=200 ~/Downloads/click-sao.mp3 & sleep 4; xdotool key --clearmodifiers ctrl+b"
+bindd = SUPER, LEFT, Move to left window , exec, bash -c "mpv --no-video --volume=200 ~/Downloads/click-sao.mp3 & sleep 4; xdotool key --clearmodifiers ctrl+b"
+bindd = SUPER, UP, Move to up window , exec, bash -c "mpv --no-video --volume=200 ~/Downloads/click-sao.mp3 & sleep 4; xdotool key --clearmodifiers ctrl+b"
+bindd = SUPER, DOWN, Move to down window , exec, bash -c "mpv --no-video --volume=200 ~/Downloads/click-sao.mp3 & sleep 4; xdotool key --clearmodifiers ctrl+b"
+bindd = ALT, TAB, Move to down window , exec, bash -c "mpv --no-video --volume=200 ~/Downloads/click-sao.mp3 & sleep 4; xdotool key --clearmodifiers ctrl+b"
+
+# Move to other desks
+bindd = SUPER, 1 , Move to down desk , exec, bash -c "mpv --no-video --volume=130 ~/Downloads/terminal.mp3"
+bindd = SUPER, 2 , Move to down desk , exec, bash -c "mpv --no-video --volume=130 ~/Downloads/terminal.mp3"
+bindd = SUPER, 3 , Move to down desk , exec, bash -c "mpv --no-video --volume=130 ~/Downloads/terminal.mp3"
+bindd = SUPER, 4 , Move to down desk , exec, bash -c "mpv --no-video --volume=130 ~/Downloads/terminal.mp3"
+bindd = SUPER, 5 , Move to down desk , exec, bash -c "mpv --no-video --volume=130 ~/Downloads/terminal.mp3"

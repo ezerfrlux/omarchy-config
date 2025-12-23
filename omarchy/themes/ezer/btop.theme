@@ -1,0 +1,80 @@
+# Main background, empty for terminal default
+theme[main_bg]=#2b2e34
+
+# Main text color
+theme[main_fg]=#f5c6e7
+
+# Title color for boxes
+theme[title]=#f5c6e7
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]=#f8b7d4
+
+# Background color of selected items
+theme[selected_bg]=#3a3f46
+
+# Foreground color of selected items
+theme[selected_fg]=#fbcfe8
+
+# Color of inactive/disabled text
+theme[inactive_fg]=#2b2e34
+
+# Color of text appearing on top of graphs
+theme[graph_text]=#f5c6e7
+
+# Misc colors for processes box
+theme[proc_misc]=#f8b7d4
+
+# Box outline colors
+theme[cpu_box]=#3a3f46
+theme[mem_box]=#3a3f46
+theme[net_box]=#3a3f46
+theme[proc_box]=#3a3f46
+
+# Box divider line color
+theme[div_line]=#3a3f46
+
+# Temperature graph colors
+theme[temp_start]=#f5c6e7
+theme[temp_mid]=#fbb1d2
+theme[temp_end]=#f77ab0
+
+# CPU graph colors
+theme[cpu_start]=#f5c6e7
+theme[cpu_mid]=#bb1d2
+theme[cpu_end]=#f77ab0
+
+# Mem/Disk free meter
+theme[free_start]=#f77ab0
+theme[free_mid]=#fbb1d2
+theme[free_end]=#f5c6e7
+
+# Mem/Disk cached meter
+theme[cached_start]=#f9d6eb
+theme[cached_mid]=#fbcce0
+theme[cached_end]=#f5c6e7
+
+# Mem/Disk available meter
+theme[available_start]=#f77ab0
+theme[available_mid]=#fbb1d2
+theme[available_end]=#f5c6e7
+
+# Mem/Disk used meter
+theme[used_start]=#f5c6e7
+theme[used_mid]=#fbb1d2
+theme[used_end]=#f77ab0
+
+# Download graph colors
+theme[download_start]=#f5c6e7
+theme[download_mid]=#fbcce0
+theme[download_end]=#f9d6eb
+
+# Upload graph colors
+theme[upload_start]=#fbb1d2
+theme[upload_mid]=#f8b7d4
+theme[upload_end]=#f77ab0
+
+# Process box color gradient
+theme[process_start]=#f5c6e7
+theme[process_mid]=#f77ab0
+theme[process_end]=#f55d9b

@@ -1,0 +1,24 @@
+[colors]
+[colors.primary]
+background = '#121314'   # gris oscuro más intenso
+foreground = '#f5c6e7'   # rosa pastel claro
+
+[colors.normal]
+black   = '#2c2f33'  # gris medio-oscuro
+red     = '#f77ab0'  # rosa pastel intenso
+green   = '#a7c080'  # verde suave
+yellow  = '#fbb1d2'  # rosa-lila pastel
+blue    = '#7fbbb3'  # azul suave
+magenta = '#f5c6e7'  # rosa pastel claro
+cyan    = '#83c092'  # verde-azulado suave
+white   = '#d3c6aa'  # beige claro
+
+[colors.bright]
+black   = '#2c2f33'  # gris medio-oscuro
+red     = '#f77ab0'  # rosa pastel intenso
+green   = '#b6d7a8'  # verde suave brillante
+yellow  = '#fbb1d2'  # rosa-lila pastel
+blue    = '#9fc5e8'  # azul pastel brillante
+magenta = '#f5c6e7'  # rosa pastel claro
+cyan    = '#a7c080'  # verde suave brillante
+white   = '#f5c6e7'  # rosa pastel claro

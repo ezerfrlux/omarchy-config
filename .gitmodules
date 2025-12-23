@@ -1,0 +1,3 @@
+[submodule "wlogout"]
+	path = wlogout
+	url = https://github.com/ArtsyMacaw/wlogout

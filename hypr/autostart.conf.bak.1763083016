@@ -1,0 +1,12 @@
+# Extra autostart processes
+# exec-once = uwsm app -- my-service
+exec-once = bash -c "mpv --no-video ~/Downloads/login.mp3"
+exec-once = uwsm app -- $TERMINAL -e "htop"
+exec-once = uwsm app -- $TERMINAL -e "cava"
+exec-once = uwsm app -- $TERMINAL -e "cmatrix"
+exec-once = uwsm app -- $TERMINAL -e "peaclock"
+exec-once = uwsm app -- $TERMINAL -e bash -c "sleep 2; nohup mpvpaper -o '--loop --no-audio --vf=scale=1920:1080,lavfi=scale2ref=w=iw:h=ih[scaled][ref];[ref][scaled]overlay,lavfi=fillborders=mode=reflect --panscan=1.0 --video-unscaled=no --geometry=0:0 --no-keepaspect-window' eDP-1 ~/Downloads/asuna-kirito-wallpaper.mp4 >/dev/null 2>&1 & exec bash"
+
+
+
+
