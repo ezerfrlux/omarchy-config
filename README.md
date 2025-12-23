@@ -24,6 +24,18 @@
 
 ---
 
+
+## 🔊 Custom Sounds
+
+This repository includes **custom sound effects** located in:
+
+       sound/
+
+change location file of sounds on  keybindings hyprland
+
+## [Animations +5](/omarchy/animations)
+
+
 # Omarchy Config
 
 This repository contains my personalized **Omarchy configuration**, including themes, layout tweaks, and custom settings to enhance the look and feel of Omarchy.
@@ -49,5 +61,12 @@ If you want to use this configuration in your own Omarchy setup:
 
 ### 1️⃣ Backup your current Omarchy config (optional)
 
-```bash
-mv ~/.config/omarchy ~/.config/omarchy.backup
+    ```bash
+    mv ~/.config/omarchy ~/.config/omarchy.backup
+
+2️⃣ Clone this repository
+git clone https://github.com/ezerfrlux/omarchy-config.git ~/.config/omarchy
+
+3️⃣ Initialize submodules (if any)
+cd ~/.config/omarchy
+git submodule update --init --recursive
